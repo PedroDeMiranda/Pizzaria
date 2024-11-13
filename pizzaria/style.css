@@ -1,0 +1,79 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('fundo.png');
+    color: #097d4c;
+    margin: 0;
+    padding: 20px;
+}
+
+header{
+    background-color: #f1ead0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #097d4c; 
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #097d4c; 
+}
+
+input[type='text'],input[type='tel'], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #097d4c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+fieldset {
+    border: 1px solid #097d4c;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+legend {
+    color: #097d4c; /* Cor de tomate */
+    font-weight: bold;
+}
+
+#recheio {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1ead0; 
+    border-radius: 4px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Miranda's Pizzaria</h1>
+        <h2>Pedido de Pizza</h2>
+    </header>
+    <div>
+        <form action="https://doncorleone.com.br/contato/" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+            <fieldset>
+                <h3>Endereço</h3>
+                
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" required>
+            
+                <label for="numero">Número</label>
+                <input type="text" name="numero" id="numero" required>
+            
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro" required>
+            
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" required>
+
+            </fieldset>
+            
+            <label for="tamanho">Tamanho da pizza</label>
+            <select name="genero">
+                <option value="familia">Família</option>
+                <option value="grande">Grande</option>
+                <option value="media">Media</option>
+                <option value="pequena">Pequena</option>
+            </select>
+
+            <label for="sabor-pizza">Escolha o sabor da pizza:</label>
+            <select name="sabor-pizza" id="sabor-pizza" required>            
+                <option value="mussarela">Mussarela</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="marguerita">Marguerita</option>
+                <option value="portuguesa">Portuguesa</option>
+                <option value="frango-catupiry">Frango com Catupiry</option>
+                <option value="quatro-queijos">Quatro Queijos</option>
+                <option value="baiana">Baiana</option>
+                <option value="peperoni">Peperoni</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="chocolate">Chocolate</option>
+            </select>
+            
+            <label for="borda-recheada">
+                Borda Recheada
+                <input type="checkbox" id="borda-recheada" onclick="document.getElementById('recheio').style.display = this.checked ? 'block' : 'none'">
+            </label>
+            
+            <div id="recheio" style="display: none;">
+                <p>Escolha o recheio da borda:</p>
+                <label>
+                    <input type="radio" name="recheio" value="catupiry" required> Catupiry
+                </label>
+                <label>
+                    <input type="radio" name="recheio" value="cheddar" required> Cheddar
+                </label>
+                <label>
+                    <input type="radio" name="recheio" value="chocolate" required> Chocolate
+                </label>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
